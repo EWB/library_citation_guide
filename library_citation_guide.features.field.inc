@@ -50,7 +50,7 @@ function library_citation_guide_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -78,7 +78,7 @@ function library_citation_guide_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '4',
+        'weight' => '5',
       ),
     ),
   );
@@ -124,7 +124,7 @@ function library_citation_guide_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => 4,
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -161,7 +161,7 @@ function library_citation_guide_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '5',
+        'weight' => '6',
       ),
     ),
   );
@@ -204,7 +204,7 @@ function library_citation_guide_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 1,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -228,7 +228,7 @@ function library_citation_guide_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '3',
+        'weight' => '4',
       ),
     ),
   );
@@ -276,7 +276,7 @@ function library_citation_guide_field_default_fields() {
             'image_style' => '',
           ),
           'type' => 'image',
-          'weight' => 2,
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -308,19 +308,19 @@ function library_citation_guide_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '2',
+        'weight' => '3',
       ),
     ),
   );
 
-  // Exported field: 'node-library_citation_guide-field_citation_guide_subjects'.
-  $fields['node-library_citation_guide-field_citation_guide_subjects'] = array(
+  // Exported field: 'node-library_citation_guide-field_subjects'.
+  $fields['node-library_citation_guide-field_subjects'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_citation_guide_subjects',
+      'field_name' => 'field_subjects',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -339,7 +339,7 @@ function library_citation_guide_field_default_fields() {
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'vocabulary' => 'semester',
+            'vocabulary' => 'library_subjects',
             'parent' => '0',
           ),
         ),
@@ -358,7 +358,7 @@ function library_citation_guide_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => 3,
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -368,7 +368,7 @@ function library_citation_guide_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_citation_guide_subjects',
+      'field_name' => 'field_subjects',
       'label' => 'Subjects',
       'required' => 0,
       'settings' => array(
@@ -378,8 +378,8 @@ function library_citation_guide_field_default_fields() {
         'active' => 1,
         'module' => 'options',
         'settings' => array(),
-        'type' => 'options_buttons',
-        'weight' => '1',
+        'type' => 'options_select',
+        'weight' => '2',
       ),
     ),
   );
