@@ -57,13 +57,15 @@ function library_citation_guide_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => '1',
         ),
         'search_result' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
+          'settings' => array(
+            'trim_length' => '250',
+          ),
+          'type' => 'text_summary_or_trimmed',
           'weight' => '2',
         ),
         'teaser' => array(
@@ -145,13 +147,12 @@ function library_citation_guide_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '4',
+          'weight' => '3',
         ),
         'search_result' => array(
           'label' => 'inline',
-          'module' => 'link',
           'settings' => array(),
-          'type' => 'link_default',
+          'type' => 'hidden',
           'weight' => '3',
         ),
         'teaser' => array(
@@ -236,10 +237,9 @@ function library_citation_guide_field_default_fields() {
         ),
         'full' => array(
           'label' => 'above',
-          'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '2',
+          'type' => 'hidden',
+          'weight' => '4',
         ),
         'search_result' => array(
           'label' => 'above',
@@ -320,24 +320,24 @@ function library_citation_guide_field_default_fields() {
           'weight' => '3',
         ),
         'full' => array(
-          'label' => 'above',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
-          'weight' => '3',
-        ),
-        'search_result' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
             'image_style' => '320',
           ),
           'type' => 'image',
-          'weight' => '4',
+          'weight' => '0',
+        ),
+        'search_result' => array(
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => 'content',
+            'image_style' => 'thumbnail',
+          ),
+          'type' => 'image',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -426,17 +426,13 @@ function library_citation_guide_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'search_result' => array(
           'label' => 'inline',
-          'module' => 'ds',
-          'settings' => array(
-            'taxonomy_term_link' => TRUE,
-            'taxonomy_term_separator' => ', ',
-          ),
-          'type' => 'ds_taxonomy_separator',
-          'weight' => '1',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
