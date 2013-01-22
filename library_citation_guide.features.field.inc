@@ -324,7 +324,7 @@ function library_citation_guide_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => '320',
+            'image_style' => 'medium',
           ),
           'type' => 'image',
           'weight' => '0',
